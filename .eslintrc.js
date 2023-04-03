@@ -3,30 +3,25 @@ module.exports = {
     browser: true,
     es2021: true,
     node: true,
+    jest: true
   },
-  extends: [
-    'plugin:react/recommended',
-    'airbnb',
-    'eslint:recommended',
-    'plugin:react-hooks/recommended',
-    'plugin:prettier/recommended',
-  ],
-  overrides: [
-  ],
+  extends: ['plugin:react/recommended', 'eslint:recommended', 'plugin:react-hooks/recommended', 'plugin:prettier/recommended', 'plugin:storybook/recommended'],
+  overrides: [],
   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true
+    },
+    ecmaVersion: 12,
+    sourceType: 'module'
   },
-  plugins: [
-    'react',
-  ],
+  plugins: ['react'],
   settings: {
     react: {
-      version: 'detect',
-    },
+      version: 'detect'
+    }
   },
   rules: {
     'react/react-in-jsx-scope': 'off',
-    'no-unused-vars': 'off',
-  },
+    'no-unused-vars': 'off'
+  }
 };
