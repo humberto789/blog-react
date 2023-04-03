@@ -5,6 +5,6 @@ import mock from './mock';
 describe('<GridTwoColumn />', () => {
     it('should render two column grid', () => {
         const { container } = renderTheme(<GridTwoColumn {...mock} />);
-        expect(container.firstChild).toMatchSnapshot;
+        expect(container.firstChild).toMatchSnapshot();
     });
 });

@@ -8,6 +8,6 @@ describe('<Footer />', () => {
         expect(
             screen.getByRole('heading', { name: 'Olá' }),
         ).toBeInTheDocument();
-        expect(container).toMatchSnapshot;
+        expect(container).toMatchSnapshot();
     });
 });
